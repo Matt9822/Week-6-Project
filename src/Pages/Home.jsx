@@ -1,10 +1,11 @@
+import Hero from "../Components/Hero"
 import Nav from "../Components/Nav"
 
 const Home = () => {
   return (
     <div className="bg-black">
       <Nav />
-      <div className="text-white text-xl">Home</div>
+      <Hero />
     </div>
   )
 }
