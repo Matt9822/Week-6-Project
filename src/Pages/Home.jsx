@@ -3,7 +3,7 @@ import Nav from "../Components/Nav"
 
 const Home = () => {
   return (
-    <div className="bg-black">
+    <div className="">
       <Nav />
       <Hero />
     </div>

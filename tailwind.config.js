@@ -4,17 +4,23 @@ import plugin from "tailwindcss/plugin";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
+    },
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
       addComponents({
         ".white": {
-          "@apply text-white text-lg": {},
+          "@apply text-white text-sm": {},
         },
       });
-      addUtilities({});
+      addUtilities({
+      });
     }),
   ],
 };
