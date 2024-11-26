@@ -18,6 +18,15 @@ export default {
         ".white": {
           "@apply text-white text-sm": {},
         },
+        ".primary-header": {
+          "@apply z-10 sticky top-0 bg-gradient-to-t from-transparent to-black": {},
+        },
+        ".primary-header.sticking": {
+          "@apply bg-black sticky top-0": {},
+        },
+        "rotate": {
+          "@apply rotate-180": {},
+        },
       });
       addUtilities({
       });
