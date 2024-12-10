@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 import profile_img from "../assets/profile_img.png";
 import { useState, useEffect } from "react";
 import { Popular, Movies, TvShows, Home} from "./Design/NavDesign";
-import { FlyoutLink } from "./Design/NavFlyOutMenu";
+import FlyoutLink, { BrowsingContent } from "./Design/FlyoutLink";
 
 const Nav = () => {
   const [openSearch, setOpenSearch] = useState(false);
@@ -35,19 +35,17 @@ const Nav = () => {
     <header className="primary-header transition-all ease-in-out duration-[400ms]">
       <div className="flex justify-between items-center h-[68px]">
         <div className="flex items-center justify-center">
-          <Link to={"/"} className="max-[1100px]:mr-6">
+          <Link to={"/"} className="max-[1100px]:mr-6 ml-[60px]">
             <img
               src={logo}
               alt="Netflix"
               height={"10px"}
               width={"93px"}
-              className="ml-[60px] max-[1100px]:ml-4"
+              className=" max-[1100px]:ml-4"
             />
           </Link>
           <div className={`items-center cursor-pointer hidden max-[1100px]:flex`}>
-            <p className="text-white text-sm ml-4">Browse</p>
-            <FontAwesomeIcon icon={faCaretDown} className="text-white ml-2"/>
-            <FlyoutLink>Browse</FlyoutLink>
+            <FlyoutLink FlyoutContent={BrowsingContent}>Browse</FlyoutLink>
           </div>
           <ul className="flex items-center">
             <Link to={"/"} className="ml-11 mr-5">
@@ -80,13 +78,13 @@ const Nav = () => {
             <FontAwesomeIcon icon={faMagnifyingGlass} className="white w-[20px] h-[20px] mt-1" />
           </div>
           <ul className="flex items-center">
-            <li className="white mx-6">Kids</li>
+            <li className="white mx-6 cursor-pointer">Kids</li>
             <li>
-              <FontAwesomeIcon icon={faBell} className="text-white mr-6 h-5" />
+              <FontAwesomeIcon icon={faBell} className="text-white mr-6 h-5 cursor-pointer" />
             </li>
           </ul>
           <div className={`flex items-center cursor-pointer mr-10 `}>
-            <img src={profile_img} alt="" className="mr-3" />
+            <img src={profile_img} alt="" className="mr-3 cursor-pointer" />
             <FontAwesomeIcon icon={faCaretDown} className="text-white hover:rotate-180 ease-in-out duration-500"/>
           </div>
         </div>
