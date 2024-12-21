@@ -26,6 +26,10 @@ const router = createBrowserRouter([
     path: "/popular",
     element: <Popular />
   },
+  {
+    path: "/NotFound",
+    element: <NotFound />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(

@@ -18,7 +18,7 @@ const Hero = () => {
             height={"100%"}
             className="max-w-[480px] mb-8 max-[1100px]:w-[75%] w-full"
           />
-          <p className="white w-full max-w-[590px] max-[1100px]:w-[75%] max-[1100px]:text-xs">
+          <p className="white w-full max-w-[590px] max-[1100px]:w-[90%] max-[1100px]:text-xs">
             Discovering his ties to a secret ancient order, a young man living
             in madern Istanbul embarks on a quest to save the city from an
             immortal enemy.
@@ -52,7 +52,13 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <TitleCards />
+      </div>
+      <div className="absolute top-[90%] w-full bg-gradient-to-b from-transparent to-black to-5%">
+      <TitleCards title={'Popular on Netflix'} type={'movie'} category={'now_playing'}/>
+      <TitleCards title={'Must watch'} type={'movie'} category={'popular'}/>
+      <TitleCards title={'Action Movies'} type={'movie'} category={'top_rated'}/>
+      <TitleCards title={'Top Rated TV Shows'} type={'tv'} category={'top_rated'}/>
+      <TitleCards title={'Popular TV'} type={'tv'} category={'popular'}/>
       </div>
     </div>
   );

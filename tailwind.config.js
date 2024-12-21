@@ -29,6 +29,15 @@ export default {
         },
       });
       addUtilities({
+        '.scrollbar-hide': {
+          /* Hide scrollbar for WebKit browsers */
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+          /* Hide scrollbar for other browsers */
+          '-ms-overflow-style': 'none', /* IE and Edge */
+          'scrollbar-width': 'none', /* Firefox */
+        },
       });
     }),
   ],
