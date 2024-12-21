@@ -56,7 +56,7 @@ const Hero = () => {
       <div className="absolute top-[90%] w-full bg-gradient-to-b from-transparent to-black to-5%">
       <TitleCards title={'Popular on Netflix'} type={'movie'} category={'now_playing'}/>
       <TitleCards title={'Must watch'} type={'movie'} category={'popular'}/>
-      <TitleCards title={'Action Movies'} type={'movie'} category={'top_rated'}/>
+      <TitleCards title={'Top Rated'} type={'movie'} category={'top_rated'}/>
       <TitleCards title={'Top Rated TV Shows'} type={'tv'} category={'top_rated'}/>
       <TitleCards title={'Popular TV'} type={'tv'} category={'popular'}/>
       </div>
