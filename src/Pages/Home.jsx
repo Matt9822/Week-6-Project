@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import Nav from "../Components/Nav";
 
@@ -10,9 +11,10 @@ const Home = () => {
     { title: "Popular TV", type: "tv", category: "popular" },
   ]
   return (
-    <div className="h-screen bg-black relative">
+    <div className="min-h-screen bg-black flex flex-col">
       <Nav />
-      <Hero />
+      <Hero titleCardsConfig={titleCardsConfig}/>
+      <Footer />
     </div>
   );
 };
