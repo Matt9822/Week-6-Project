@@ -1,6 +1,7 @@
 import Footer from "../Components/Footer"
 import Hero from "../Components/Hero"
 import Nav from "../Components/Nav"
+import { useEffect } from "react"
 
 const Popular = () => {
   const titleCardsConfig = [
@@ -10,6 +11,11 @@ const Popular = () => {
     { title: "Top Rated TV Shows", type: "tv", category: "top_rated" },
     { title: "Popular TV", type: "tv", category: "popular" },
   ]
+
+     useEffect(() => {
+        document.title = "New & Popular - Netflix";
+      }, []);
+
   return (
     <div className="bg-black">
       <Nav />

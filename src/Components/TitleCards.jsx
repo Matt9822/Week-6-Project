@@ -23,7 +23,6 @@ const TitleCards = ({ title, category, type }) => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
-      console.log(data.results);
       setApiData(data.results);
     } catch (err) {
       console.error("Fetch error:", err);

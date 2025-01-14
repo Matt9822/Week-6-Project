@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import Movies from "./Pages/Movies";
 import TvShows from "./Pages/TvShows";
 import NotFound from "./Pages/NotFound";
+import Results from "./Pages/Results";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/popular",
     element: <Popular />
+  },
+  {
+    path: "/results",
+    element: <Results />
   },
   {
     path: "/NotFound",

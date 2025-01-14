@@ -5,7 +5,7 @@ import youtube_icon from "../assets/youtube_icon.png";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="mt-[50px]">
       <div className="flex items-center flex-col">
         <div className="max-lg:ml-[60px]">
           <div className="flex w-full">

@@ -56,7 +56,7 @@ const Hero = ({ titleCardsConfig }) => {
         </div>
       </div>
       <div className="h-full w-full">
-        <div className="relative top-[-15%] z-20 bg-gradient-to-b from-transparent to-black to-[10%] max-lg:top-[-10%] max-md:top-[-5%]">
+        <div className="relative top-[-15%] z-1 bg-gradient-to-b from-transparent to-black to-[10%] max-lg:top-[-10%] max-md:top-[-5%]">
           {Array.isArray(titleCardsConfig) && titleCardsConfig.length > 0 ? (
             titleCardsConfig.map((config, index) => (
               <TitleCards key={index} {...config} />
